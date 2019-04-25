@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   resources :blogs
   resources :posts
 
+  # globbing - group items and group routes together
+
+  get 'posts/*missing', to: 'posts#missing'  
+
   root to: 'pages#home'
   
 end
