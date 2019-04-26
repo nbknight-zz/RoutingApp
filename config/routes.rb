@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
   get 'posts/*missing', to: 'posts#missing'  
 
+   get 'query/:else/:anotherone', to: 'pages#something'
+
   root to: 'pages#home'
   
 end
